@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+    <link rel="stylesheet" href="DataTables/datatables.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min (5).js"></script>
+    <script src="DataTables/datatables.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#example").DataTable({
+            "pagingType": "full_Numbers"
+        });
+    });
+</script>
+<title>jQuery Datatable</title>
+
+</head>
+<body>
+    <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Email</th>
+                <th>Final Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>S01</th>
+                <th>Quang Trung</th>
+                <th>Nam</th>
+                <th>07/02/2001</th>
+                <th>trung@gmail.com</th>
+                <th>45</th>
+            </tr>
+
+            <tr>
+                <th>S02</th>
+                <th>Thu Nhi</th>
+                <th>Nữ</th>
+                <th>09/11/2001</th>
+                <th>Nhi@mail.com</th>
+                <th>56</th>
+            </tr>
+        </tbody>
+        <tfoot>
+                <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Gender</th>
+                        <th>Date of Birth</th>
+                        <th>Email</th>
+                        <th>Final Mark</th>
+                    </tr> 
+        </tfoot>
+    </table>
+
+</body>
+</html>
